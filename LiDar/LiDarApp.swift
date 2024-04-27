@@ -1,17 +1,31 @@
-//
-//  LiDarApp.swift
-//  LiDar
-//
-//  Created by Omer Khan on 4/27/24.
-//
-
 import SwiftUI
 
 @main
-struct LiDarApp: App {
+struct LiDARApp: App {
+    @AppStorage("isOnboardingComplete") private var isOnboardingComplete = false
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if isOnboardingComplete {
+                MainTabView()
+            } else {
+                OnboardingView(isOnboardingComplete: $isOnboardingComplete)
+            }
+        }
+    }
+}
+
+struct MainTabView: View {
+    var body: some View {
+        TabView {
+            ScanRecorderView()
+                .tabItem {
+                    Label("New Recording", systemImage: "dot.radiowaves.left.and.right")
+                }
+            RecordingsListView()
+                .tabItem {
+                    Label("Recordings", systemImage: "list.bullet")
+                }
         }
     }
 }

@@ -14,6 +14,12 @@
 		17B454672BDD5154008DE3B2 /* LiDarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B454662BDD5154008DE3B2 /* LiDarTests.swift */; };
 		17B454712BDD5154008DE3B2 /* LiDarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B454702BDD5154008DE3B2 /* LiDarUITests.swift */; };
 		17B454732BDD5154008DE3B2 /* LiDarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B454722BDD5154008DE3B2 /* LiDarUITestsLaunchTests.swift */; };
+		17B454812BDD7458008DE3B2 /*  OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B454802BDD7458008DE3B2 /*  OnboardingView.swift */; };
+		17B454832BDD7703008DE3B2 /* ScanRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B454822BDD7703008DE3B2 /* ScanRecorderView.swift */; };
+		17B454852BDD7718008DE3B2 /* RecordingsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B454842BDD7718008DE3B2 /* RecordingsListView.swift */; };
+		17B454872BDD7729008DE3B2 /* RecordingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B454862BDD7729008DE3B2 /* RecordingDetailView.swift */; };
+		17B454892BDD773D008DE3B2 /* RecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B454882BDD773D008DE3B2 /* RecordingManager.swift */; };
+		17B4548B2BDD7CEA008DE3B2 /* RecordingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B4548A2BDD7CEA008DE3B2 /* RecordingsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,13 @@
 		17B4546C2BDD5154008DE3B2 /* LiDarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiDarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B454702BDD5154008DE3B2 /* LiDarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiDarUITests.swift; sourceTree = "<group>"; };
 		17B454722BDD5154008DE3B2 /* LiDarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiDarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		17B4547F2BDD64A8008DE3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		17B454802BDD7458008DE3B2 /*  OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " OnboardingView.swift"; sourceTree = "<group>"; };
+		17B454822BDD7703008DE3B2 /* ScanRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanRecorderView.swift; sourceTree = "<group>"; };
+		17B454842BDD7718008DE3B2 /* RecordingsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsListView.swift; sourceTree = "<group>"; };
+		17B454862BDD7729008DE3B2 /* RecordingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDetailView.swift; sourceTree = "<group>"; };
+		17B454882BDD773D008DE3B2 /* RecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingManager.swift; sourceTree = "<group>"; };
+		17B4548A2BDD7CEA008DE3B2 /* RecordingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +107,17 @@
 		17B454542BDD5153008DE3B2 /* LiDar */ = {
 			isa = PBXGroup;
 			children = (
+				17B4547F2BDD64A8008DE3B2 /* Info.plist */,
 				17B454552BDD5153008DE3B2 /* LiDarApp.swift */,
 				17B454572BDD5153008DE3B2 /* ContentView.swift */,
 				17B454592BDD5153008DE3B2 /* Assets.xcassets */,
 				17B4545B2BDD5153008DE3B2 /* Preview Content */,
+				17B454802BDD7458008DE3B2 /*  OnboardingView.swift */,
+				17B454822BDD7703008DE3B2 /* ScanRecorderView.swift */,
+				17B454842BDD7718008DE3B2 /* RecordingsListView.swift */,
+				17B454862BDD7729008DE3B2 /* RecordingDetailView.swift */,
+				17B454882BDD773D008DE3B2 /* RecordingManager.swift */,
+				17B4548A2BDD7CEA008DE3B2 /* RecordingsViewModel.swift */,
 			);
 			path = LiDar;
 			sourceTree = "<group>";
@@ -257,8 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17B4548B2BDD7CEA008DE3B2 /* RecordingsViewModel.swift in Sources */,
 				17B454582BDD5153008DE3B2 /* ContentView.swift in Sources */,
+				17B454892BDD773D008DE3B2 /* RecordingManager.swift in Sources */,
 				17B454562BDD5153008DE3B2 /* LiDarApp.swift in Sources */,
+				17B454852BDD7718008DE3B2 /* RecordingsListView.swift in Sources */,
+				17B454812BDD7458008DE3B2 /*  OnboardingView.swift in Sources */,
+				17B454832BDD7703008DE3B2 /* ScanRecorderView.swift in Sources */,
+				17B454872BDD7729008DE3B2 /* RecordingDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,11 +451,14 @@
 				DEVELOPMENT_TEAM = V6XWCKSGZQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiDar/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used for Scanning Field";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,11 +483,14 @@
 				DEVELOPMENT_TEAM = V6XWCKSGZQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiDar/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used for Scanning Field";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
